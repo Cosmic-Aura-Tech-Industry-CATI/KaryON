@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, Suspense, lazy } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./assets/Components/Navbar";
 import Footer from "./assets/Components/Footer";
 import './assets/Components/Footer.css';
@@ -19,11 +19,117 @@ const Blog = lazy(() => import("./assets/Pages/Blog"));
 const Mybooking = lazy(() => import("./assets/Pages/Mybooking"));
 const HomeCleaning = lazy(() => import("./assets/Pages/HomeCleaning"));
 
+const SITE_NAME = "KaryON";
+const SITE_URL = import.meta.env.VITE_SITE_URL || "https://karyon.netlify.app";
+const SITE_IMAGE = `${SITE_URL}/titleImage.png`;
+
+const routeMeta = {
+  "/": {
+    title: "KaryON | Trusted Home Services Platform",
+    description: "Book verified professionals on KaryON for cleaning, plumbing, electrical, and more. Fast bookings, trusted experts, and reliable support.",
+    keywords: "KaryON, home services, cleaning services, plumbing, electricians, home maintenance"
+  },
+  "/services": {
+    title: "Services | KaryON",
+    description: "Explore KaryON services including home cleaning, plumbing, electrical repairs, painting, and more from trusted professionals.",
+    keywords: "KaryON services, home cleaning, plumbing service, electrician service"
+  },
+  "/signup": {
+    title: "Sign Up | KaryON",
+    description: "Create your KaryON account to book home services faster, manage bookings, and get personalized offers.",
+    keywords: "KaryON signup, create account, book home services"
+  },
+  "/contact": {
+    title: "Contact Us | KaryON",
+    description: "Contact KaryON support for service inquiries, booking help, and customer assistance.",
+    keywords: "KaryON contact, customer support, help center"
+  },
+  "/login": {
+    title: "Login | KaryON",
+    description: "Login to your KaryON account to manage bookings, saved services, and profile settings.",
+    keywords: "KaryON login, account access"
+  },
+  "/about": {
+    title: "About Us | KaryON",
+    description: "Learn about KaryON, our mission, team, and commitment to trusted, high-quality home services.",
+    keywords: "about KaryON, KaryON team, home services platform"
+  },
+  "/howitworks": {
+    title: "How It Works | KaryON",
+    description: "See how KaryON works in simple steps: choose a service, book a professional, and get quality service at your doorstep.",
+    keywords: "how KaryON works, service booking process"
+  },
+  "/blog": {
+    title: "Blog | KaryON",
+    description: "Read home care tips, maintenance guides, and expert advice on the KaryON blog.",
+    keywords: "KaryON blog, home care tips, DIY guides"
+  },
+  "/bookings": {
+    title: "My Bookings | KaryON",
+    description: "Track, manage, and review your service bookings with KaryON.",
+    keywords: "KaryON bookings, manage appointments"
+  },
+  "/cleaning": {
+    title: "Home Cleaning | KaryON",
+    description: "Book professional home cleaning services on KaryON with verified experts and transparent pricing.",
+    keywords: "KaryON cleaning, home cleaning service"
+  }
+};
+
+const setMetaTag = (selector, attribute, value) => {
+  let tag = document.head.querySelector(selector);
+  if (!tag) {
+    tag = document.createElement("meta");
+    tag.setAttribute(attribute, selector.includes("property=") ? selector.match(/property=\"([^\"]+)\"/)[1] : selector.match(/name=\"([^\"]+)\"/)[1]);
+    document.head.appendChild(tag);
+  }
+  tag.setAttribute("content", value);
+};
+
+const SEOManager = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const currentMeta = routeMeta[pathname] || {
+      title: "KaryON | Trusted Home Services Platform",
+      description: "KaryON helps you book trusted professionals for your home service needs.",
+      keywords: "KaryON, home services"
+    };
+
+    document.title = currentMeta.title;
+
+    setMetaTag('meta[name="description"]', "name", currentMeta.description);
+    setMetaTag('meta[name="keywords"]', "name", currentMeta.keywords);
+    setMetaTag('meta[name="robots"]', "name", "index, follow");
+    setMetaTag('meta[property="og:site_name"]', "property", SITE_NAME);
+    setMetaTag('meta[property="og:type"]', "property", "website");
+    setMetaTag('meta[property="og:title"]', "property", currentMeta.title);
+    setMetaTag('meta[property="og:description"]', "property", currentMeta.description);
+    setMetaTag('meta[property="og:url"]', "property", `${SITE_URL}${pathname}`);
+    setMetaTag('meta[property="og:image"]', "property", SITE_IMAGE);
+    setMetaTag('meta[name="twitter:card"]', "name", "summary_large_image");
+    setMetaTag('meta[name="twitter:title"]', "name", currentMeta.title);
+    setMetaTag('meta[name="twitter:description"]', "name", currentMeta.description);
+    setMetaTag('meta[name="twitter:image"]', "name", SITE_IMAGE);
+
+    let canonicalTag = document.head.querySelector('link[rel="canonical"]');
+    if (!canonicalTag) {
+      canonicalTag = document.createElement("link");
+      canonicalTag.setAttribute("rel", "canonical");
+      document.head.appendChild(canonicalTag);
+    }
+    canonicalTag.setAttribute("href", `${SITE_URL}${pathname}`);
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   
   return (
     <>
       <div className="app">
+      <SEOManager />
       <Navbar />
       <main style={{ flex: 1 }}>
         <Suspense fallback={<div>Loading...</div>}>
