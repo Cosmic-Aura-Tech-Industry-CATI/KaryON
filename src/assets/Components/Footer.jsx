@@ -83,12 +83,12 @@ const Footer = () => {
               <h3 className="footer-title">Our Services</h3>
               <ul className="footer-links">
                 <li><a href="/cleaning"><span className="link-arrow">→</span> Home Cleaning</a></li>
-                <li><a href="/services/plumbing"><span className="link-arrow">→</span> Plumbing</a></li>
-                <li><a href="/services/electrical"><span className="link-arrow">→</span> Electrical</a></li>
-                <li><a href="/services/tutoring"><span className="link-arrow">→</span> Tutoring</a></li>
-                <li><a href="/services/painting"><span className="link-arrow">→</span> Painting</a></li>
-                <li><a href="/services/moving"><span className="link-arrow">→</span> Moving & Shifting</a></li>
-                <li><a href="/services/all" className="view-all">View All Services <span className="view-all-icon">→</span></a></li>
+                <li><a href="/plumbing"><span className="link-arrow">→</span> Plumbing</a></li>
+                <li><a href="/electrical"><span className="link-arrow">→</span> Electrical</a></li>
+                <li><a href="/tutoring"><span className="link-arrow">→</span> Tutoring</a></li>
+                <li><a href="/painting"><span className="link-arrow">→</span> Painting</a></li>
+                <li><a href="/moving"><span className="link-arrow">→</span> Moving & Shifting</a></li>
+                <li><a href="/all" className="view-all">View All Services <span className="view-all-icon">→</span></a></li>
               </ul>
             </div>
 
