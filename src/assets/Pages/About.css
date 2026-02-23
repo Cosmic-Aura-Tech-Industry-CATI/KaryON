@@ -34,6 +34,7 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   background: #f8fafc;
+  padding-top: 0;
 }
 
 /* ==================== */
@@ -51,7 +52,8 @@ html, body {
   background: linear-gradient(135deg, #667eea 0%, #502222 100%);
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
-  padding: 6rem 5% 4rem;
+  margin-top: calc(-1 * var(--navbar-height));
+  padding: calc(6rem + var(--navbar-height)) 5% 4rem;
 }
 
 .about-hero-particles {
@@ -1685,7 +1687,7 @@ html, body {
 @media screen and (max-width: 767px) {
   .about-hero {
     min-height: 60vh;
-    padding: 3rem 5% 2rem;
+    padding: calc(3rem + var(--navbar-height)) 5% 2rem;
   }
 
   .about-hero-title {
@@ -1992,7 +1994,7 @@ html, body {
 @media screen and (max-height: 600px) and (orientation: landscape) {
   .about-hero {
     min-height: auto;
-    padding: 3rem 5%;
+    padding: calc(3rem + var(--navbar-height)) 5%;
   }
 
   .about-hero-content {

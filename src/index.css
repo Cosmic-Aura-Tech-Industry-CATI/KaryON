@@ -97,6 +97,11 @@ main,
 
 /* Pull hero sections up so their gradient touches the navbar (removes visible gap) */
 .hero-section,
+.about-hero,
+.blog-hero,
+.login-hero,
+.how-hero,
+.service-hero,
 .services-hero,
 .contact-hero,
 .signup-hero {
@@ -106,13 +111,12 @@ main,
 
 @media (max-width: 768px) {
   .hero-section,
-  .services-hero,
   .about-hero,
   .blog-hero,
   .login-hero,
-  .my-booking-hero,
-  .home-cleaning-hero,
-  .how-it-works-hero,
+  .how-hero,
+  .service-hero,
+  .services-hero,
   .contact-hero,
   .signup-hero {
     margin-top: calc(-1 * var(--navbar-height));
