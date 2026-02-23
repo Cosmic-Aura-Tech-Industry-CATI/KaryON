@@ -35,6 +35,7 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   background: #f8fafc;
+  color-scheme: light;
 }
 
 /* ==================== */
@@ -292,7 +293,24 @@ html, body {
   font-size: 0.95rem;
   transition: all 0.3s ease;
   background: white;
+  color: #1a1a1a;
+  caret-color: #1a1a1a;
   font-family: 'Poppins', sans-serif;
+}
+
+.form-input::placeholder {
+  color: #6b7280;
+}
+
+.form-input:-webkit-autofill,
+.form-input:-webkit-autofill:hover,
+.form-input:-webkit-autofill:focus,
+.otp-input:-webkit-autofill,
+.otp-input:-webkit-autofill:hover,
+.otp-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #1a1a1a;
+  box-shadow: 0 0 0px 1000px #ffffff inset;
+  transition: background-color 9999s ease-in-out 0s;
 }
 
 .form-input:focus {
