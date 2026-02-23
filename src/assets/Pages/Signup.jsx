@@ -194,7 +194,7 @@ const Signup = () => {
         
         <div className="signup-hero-content">
           <h1 className="signup-hero-title">
-            Join <span className="hero-highlight">HomeService</span>
+            Join <span className="hero-highlight">KaryON</span>
           </h1>
           <p className="signup-hero-description">
             Choose your path and start your journey with us today
@@ -696,7 +696,7 @@ const Signup = () => {
         <div className="benefits-container">
           <div className="benefits-header">
             <h2 className="benefits-title">
-              Why Join <span className="title-accent">HomeService</span>
+              Why Join <span className="title-accent">KaryON</span>
             </h2>
           </div>
 

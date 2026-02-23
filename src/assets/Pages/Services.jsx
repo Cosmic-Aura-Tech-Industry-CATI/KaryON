@@ -287,7 +287,7 @@ const Services = () => {
           <div className="section-header">
             <span className="section-badge">Why Us</span>
             <h2 className="section-title">
-              Why Choose <span className="title-accent">HomeService</span>
+              Why Choose <span className="title-accent">KaryON</span>
             </h2>
           </div>
 

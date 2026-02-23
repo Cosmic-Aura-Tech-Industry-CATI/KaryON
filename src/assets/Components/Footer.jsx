@@ -32,10 +32,10 @@ const Footer = () => {
             {/* Company Info Section */}
             <div className="footer-section company-info">
               <div className="footer-logo">
-                <img src="logo-main.png" alt="LocalConnect Logo" width="200px" height="55px"></img>
+                <img src="logo-main.png" alt="KaryON Logo" width="200px" height="55px"></img>
               </div>
               <p className="company-description">
-                Making home services simple, secure, and reliable. Connect with verified professionals for all your home service needs.
+                KaryON makes home services simple, secure, and reliable. Connect with verified professionals for all your home service needs.
               </p>
               <div className="social-links">
                 <a href="#" className="social-link facebook" aria-label="Facebook">
@@ -107,7 +107,7 @@ const Footer = () => {
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                     <polyline points="22,6 12,13 2,6"/>
                   </svg>
-                  <span>support@localconnect.com</span>
+                  <span>support@karyon.com</span>
                 </div>
                 <div className="contact-item">
                   <svg className="contact-icon" viewBox="0 0 24 24">
@@ -160,7 +160,7 @@ const Footer = () => {
           <div className="footer-bottom">
             <div className="bottom-content">
               <div className="copyright">
-                <span className="copyright-symbol">©</span> {currentYear} LocalConnect. All rights reserved.
+                <span className="copyright-symbol">©</span> {currentYear} KaryON. All rights reserved.
               </div>
               
               <div className="bottom-links">

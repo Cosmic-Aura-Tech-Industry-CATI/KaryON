@@ -149,8 +149,8 @@ const Contact = () => {
                 <div className="info-icon-glow"></div>
               </div>
               <h3 className="info-card-title">Email Us</h3>
-              <p className="info-card-detail">support@homeservice.com</p>
-              <p className="info-card-detail">info@homeservice.com</p>
+              <p className="info-card-detail">support@karyon.com</p>
+              <p className="info-card-detail">info@karyon.com</p>
               <p className="info-card-note">24hr response time</p>
               <button className="info-card-btn">Send Email</button>
             </div>
@@ -437,7 +437,7 @@ const Contact = () => {
               <div className="map-overlay">
                 <div className="map-marker">
                   <span className="marker-icon">📍</span>
-                  <span className="marker-text">HomeService HQ</span>
+                  <span className="marker-text">KaryON HQ</span>
                 </div>
                 <div className="map-info">
                   <h3>Main Office</h3>

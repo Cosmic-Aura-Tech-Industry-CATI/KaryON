@@ -19,7 +19,7 @@ const Navbar = () => {
         {/* Logo and Brand */}
         <div className="navbar-logo">
           <a href="/">
-            <img src="logo-main.png" alt="LocalConnect Logo" width="200px" height="55px"></img>
+            <img src="logo-main.png" alt="KaryON Logo" width="200px" height="55px"></img>
           </a>
         </div>
 

@@ -101,7 +101,7 @@ const AboutUs = () => {
       name: "John Anderson",
       role: "Founder & CEO",
       image: "👨‍💼",
-      bio: "With 15+ years in home services, John founded HomeService to revolutionize how people maintain their homes.",
+      bio: "With 15+ years in home services, John founded KaryON to revolutionize how people maintain their homes.",
       expertise: ["Strategic Planning", "Business Development", "Customer Relations"],
       social: { linkedin: "#", twitter: "#", email: "#" },
       color: "#667eea"
@@ -163,7 +163,7 @@ const AboutUs = () => {
     {
       year: "2019",
       title: "The Beginning",
-      description: "HomeService was founded with a simple mission: connect homeowners with trusted professionals.",
+      description: "KaryON was founded with a simple mission: connect homeowners with trusted professionals.",
       icon: "🚀",
       color: "#667eea"
     },
@@ -249,7 +249,7 @@ const AboutUs = () => {
     {
       name: "Robert Johnson",
       role: "Homeowner",
-      content: "The professionalism and quality of service is unmatched. I've been using HomeService for 3 years now.",
+      content: "The professionalism and quality of service is unmatched. I've been using KaryON for 3 years now.",
       rating: 5,
       image: "👨",
       color: "#667eea"
@@ -257,7 +257,7 @@ const AboutUs = () => {
     {
       name: "Patricia Lee",
       role: "Property Manager",
-      content: "Managing 20+ properties became easy with HomeService. Their professionals are always reliable.",
+      content: "Managing 20+ properties became easy with KaryON. Their professionals are always reliable.",
       rating: 5,
       image: "👩",
       color: "#fc7f03"
@@ -265,7 +265,7 @@ const AboutUs = () => {
     {
       name: "James Wilson",
       role: "Professional Partner",
-      content: "As a professional, HomeService helped me grow my business exponentially. Best decision ever!",
+      content: "As a professional, KaryON helped me grow my business exponentially. Best decision ever!",
       rating: 5,
       image: "👨‍🔧",
       color: "#502222"
@@ -274,7 +274,7 @@ const AboutUs = () => {
 
   // Achievements Data
   const achievements = [
-    { icon: "🏆", title: "Best Home Service Platform 2023", organization: "Tech Awards" },
+    { icon: "🏆", title: "Best Home Services Platform 2023", organization: "Tech Awards" },
     { icon: "⭐", title: "4.9★ Average Rating", organization: "Customer Reviews" },
     { icon: "📈", title: "200% Year-over-Year Growth", organization: "Business Report" },
     { icon: "🌍", title: "Present in 25+ Cities", organization: "Nationwide" },
@@ -309,7 +309,7 @@ const AboutUs = () => {
           </h1>
           
           <p className="about-hero-description">
-            HomeService connects you with trusted professionals for all your home needs. 
+            KaryON connects you with trusted professionals for all your home needs. 
             We're building a community of reliable service providers and happy homeowners.
           </p>
 
@@ -352,7 +352,7 @@ const AboutUs = () => {
                 He realized there was a massive gap between skilled professionals and homeowners who needed them.
               </p>
               <p className="story-text">
-                Today, HomeService has grown into a trusted platform connecting thousands of homeowners with verified 
+                Today, KaryON has grown into a trusted platform connecting thousands of homeowners with verified 
                 professionals across 25+ cities. We've completed over 50,000 services with an average rating of 4.9 stars.
               </p>
               
@@ -600,7 +600,7 @@ const AboutUs = () => {
           <div className="section-header">
             <span className="section-badge">Our Team</span>
             <h2 className="section-title">
-              Meet the <span className="title-accent">People</span> Behind HomeService
+              Meet the <span className="title-accent">People</span> Behind KaryON
             </h2>
             <p className="section-description">
               Passionate individuals dedicated to revolutionizing home services

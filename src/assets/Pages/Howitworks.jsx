@@ -252,7 +252,7 @@ const HowItWorks = () => {
   // Video Section Data
   const videoData = {
     title: "See How It Works",
-    description: "Watch this short video to understand how easy it is to get your home services done with HomeService.",
+    description: "Watch this short video to understand how easy it is to get your home services done with KaryON.",
     thumbnail: "🎥"
   };
 
@@ -489,7 +489,7 @@ const HowItWorks = () => {
           <div className="section-header">
             <span className="section-badge">Why Choose Us</span>
             <h2 className="section-title">
-              The <span className="title-accent">HomeService</span> Advantage
+              The <span className="title-accent">KaryON</span> Advantage
             </h2>
             <p className="section-description">
               What makes our platform the preferred choice for thousands of users
@@ -518,7 +518,7 @@ const HowItWorks = () => {
           <div className="section-header">
             <span className="section-badge">Why We're Different</span>
             <h2 className="section-title">
-              HomeService vs <span className="title-accent">Traditional</span> Services
+              KaryON vs <span className="title-accent">Traditional</span> Services
             </h2>
           </div>
 
@@ -549,8 +549,8 @@ const HowItWorks = () => {
               </ul>
             </div>
 
-            <div className="comparison-card homeservice">
-              <h3 className="comparison-title">HomeService Way</h3>
+            <div className="comparison-card karyon">
+              <h3 className="comparison-title">KaryON Way</h3>
               <ul className="comparison-list">
                 <li className="positive">
                   <span className="list-icon">✓</span>

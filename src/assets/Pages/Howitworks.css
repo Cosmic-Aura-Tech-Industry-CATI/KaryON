@@ -922,7 +922,7 @@ html, body {
   border-color: var(--error);
 }
 
-.comparison-card.homeservice:hover {
+.comparison-card.karyon:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-2);
   border-color: var(--success);
@@ -939,7 +939,7 @@ html, body {
   color: var(--error);
 }
 
-.comparison-card.homeservice .comparison-title {
+.comparison-card.karyon .comparison-title {
   color: var(--success);
 }
 

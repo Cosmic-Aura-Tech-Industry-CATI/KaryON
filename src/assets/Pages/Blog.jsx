@@ -224,7 +224,7 @@ const Blog = () => {
         <div className="blog-hero-content">
           <div className="hero-badge">
             <span className="badge-pulse"></span>
-            HomeService Blog
+            KaryON Blog
           </div>
 
           <h1 className="blog-hero-title">

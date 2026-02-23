@@ -345,7 +345,7 @@ const Login = () => {
         <div className="features-container">
           <div className="features-header">
             <h2 className="features-title">
-              Why Choose <span className="title-accent">HomeService</span>
+              Why Choose <span className="title-accent">KaryON</span>
             </h2>
           </div>
 

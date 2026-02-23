@@ -14,6 +14,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -25,10 +29,26 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  width: 100%;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
 }
 
 h1 {
@@ -59,9 +79,15 @@ button:focus-visible {
 /* page top offset to avoid content hidden under fixed navbar */
 main,
 .home,
+.about-page,
+.blog-page,
 .services-page,
 .contact-page,
-.signup-page {
+.signup-page,
+.login-page,
+.my-booking,
+.how-it-works-page,
+.home-cleaning-page {
   padding-top: var(--navbar-height);
 }
 
@@ -81,10 +107,26 @@ main,
 @media (max-width: 768px) {
   .hero-section,
   .services-hero,
+  .about-hero,
+  .blog-hero,
+  .login-hero,
+  .my-booking-hero,
+  .home-cleaning-hero,
+  .how-it-works-hero,
   .contact-hero,
   .signup-hero {
     margin-top: calc(-1 * var(--navbar-height));
     padding-top: var(--navbar-height);
+  }
+}
+
+@media (max-width: 767px) {
+  .search-wrapper,
+  .newsletter-large-input,
+  .filter-select,
+  .user-type-btn {
+    min-width: 0 !important;
+    width: 100%;
   }
 }
 
