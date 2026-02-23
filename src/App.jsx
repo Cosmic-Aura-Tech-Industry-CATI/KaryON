@@ -20,7 +20,7 @@ const Mybooking = lazy(() => import("./assets/Pages/Mybooking"));
 const HomeCleaning = lazy(() => import("./assets/Pages/HomeCleaning"));
 
 const SITE_NAME = "KaryON";
-const SITE_URL = import.meta.env.VITE_SITE_URL || "https://karyon.netlify.app";
+const SITE_URL = import.meta.env.VITE_SITE_URL || "https://karyon.app";
 const SITE_IMAGE = `${SITE_URL}/titleImage.png`;
 
 const routeMeta = {
