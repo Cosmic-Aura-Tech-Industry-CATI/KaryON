@@ -154,52 +154,6 @@ const Plumber = () => {
     }
   ];
 
-  // Common Problems Data
-  const commonProblems = [
-    {
-      icon: "💧",
-      title: "Dripping Faucet",
-      desc: "Constant drip wasting water",
-      solution: "Quick fix in 30 mins",
-      color: "#667eea"
-    },
-    {
-      icon: "🚽",
-      title: "Running Toilet",
-      desc: "Toilet won't stop running",
-      solution: "Repair in 45 mins",
-      color: "#fc7f03"
-    },
-    {
-      icon: "🚰",
-      title: "Low Pressure",
-      desc: "Weak water flow",
-      solution: "Diagnose & fix",
-      color: "#502222"
-    },
-    {
-      icon: "💦",
-      title: "Clogged Drain",
-      desc: "Slow or blocked drain",
-      solution: "Clear in 1 hour",
-      color: "#667eea"
-    },
-    {
-      icon: "🔥",
-      title: "No Hot Water",
-      desc: "Heater not working",
-      solution: "Same-day repair",
-      color: "#fc7f03"
-    },
-    {
-      icon: "⚠️",
-      title: "Water Leak",
-      desc: "Visible leak in walls",
-      solution: "Emergency fix",
-      color: "#502222"
-    }
-  ];
-
   // Testimonials Data
   const testimonials = [
     {
@@ -358,19 +312,7 @@ const Plumber = () => {
       </section>
 
       {/* Emergency Banner */}
-      <div className="emergency-banner">
-        <div className="emergency-banner-content">
-          <span className="emergency-icon">🚨</span>
-          <div className="emergency-text">
-            <h3>Plumbing Emergency? We're here 24/7</h3>
-            <p>Call now for immediate assistance</p>
-          </div>
-          <a href="tel:+18885550123" className="emergency-phone">
-            <span className="phone-icon">📞</span>
-            +1 (888) 555-0123
-          </a>
-        </div>
-      </div>
+      
 
       {/* Services Section */}
       <section className="plumber-services">
@@ -464,39 +406,7 @@ const Plumber = () => {
       </section>
 
       {/* Common Problems Section */}
-      <section className="common-problems">
-        <div className="common-problems-container">
-          <div className="section-header">
-            <span className="section-subtitle">Common Issues</span>
-            <h2 className="section-title">
-              Frequent <span className="title-accent">Plumbing</span> Problems
-            </h2>
-          </div>
-
-          <div className="problems-grid">
-            {commonProblems.map((problem, index) => (
-              <div 
-                key={index} 
-                className="problem-card"
-                style={{ '--problem-color': problem.color }}
-                onClick={() => setSelectedProblem(index)}
-              >
-                <div className="problem-icon-wrapper">
-                  <span className="problem-icon">{problem.icon}</span>
-                </div>
-                <h3>{problem.title}</h3>
-                <p>{problem.desc}</p>
-                <div className="problem-solution">
-                  <span className="solution-badge">{problem.solution}</span>
-                </div>
-                <div className="problem-overlay">
-                  <span>Book Now →</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* How It Works */}
       <section className="plumber-how-it-works">
@@ -818,46 +728,7 @@ const Plumber = () => {
       )}
 
       {/* CTA Section */}
-      <section className="plumber-cta">
-        <div className="plumber-cta-background">
-          <div className="cta-bubble bubble-1"></div>
-          <div className="cta-bubble bubble-2"></div>
-          <div className="cta-bubble bubble-3"></div>
-        </div>
-
-        <div className="plumber-cta-container">
-          <div className="plumber-cta-content">
-            <h2 className="plumber-cta-title">
-              Need a Plumber Right Now?
-            </h2>
-            <p className="plumber-cta-description">
-              24/7 emergency service available. Call now or book online for immediate assistance.
-            </p>
-
-            <div className="plumber-cta-buttons">
-              <button 
-                className="cta-primary"
-                onClick={() => setShowBookingForm(true)}
-              >
-                <span>Book Online</span>
-                <span className="cta-icon">→</span>
-                <div className="cta-shine"></div>
-              </button>
-
-              <a href="tel:+18885550123" className="cta-phone">
-                <span className="phone-icon">📞</span>
-                <span>Call Emergency</span>
-              </a>
-            </div>
-
-            <div className="plumber-cta-features">
-              <span>✓ 1-Hour Response</span>
-              <span>✓ Licensed Plumbers</span>
-              <span>✓ No Hidden Fees</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 };
