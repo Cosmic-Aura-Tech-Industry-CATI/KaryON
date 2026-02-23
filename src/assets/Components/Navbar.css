@@ -1,0 +1,525 @@
+/* Navbar.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Logo Styles */
+.navbar-logo a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.logo-text {
+  color: white;
+}
+
+.logo-highlight {
+  color: #ffd700;
+  font-weight: 800;
+}
+
+/* Desktop Navigation Menu */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffd700;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+.nav-link.active {
+  color: #ffd700;
+}
+
+/* Right side actions */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background: #ffd700;
+  color: #333;
+  border: 2px solid #ffd700;
+}
+
+.btn-primary:hover {
+  background: #ffed4a;
+  border-color: #ffed4a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* User Menu */
+.user-menu {
+  position: relative;
+}
+
+.user-menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.user-menu-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.user-avatar {
+  width: 35px;
+  height: 35px;
+  background: #ffd700;
+  color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.user-name {
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  min-width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+.user-menu:hover .user-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.8rem 1.2rem;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background: #f5f5f5;
+  color: #667eea;
+}
+
+.dropdown-item.logout:hover {
+  color: #dc3545;
+}
+
+.dropdown-divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 0.5rem 0;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+  display: block;
+  position: relative;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* When the slide-out menu is active the hamburger should change color to contrast against the white menu */
+.navbar-menu.active + .navbar-actions .menu-toggle .hamburger .bar {
+  background: #1a1a1a;
+}
+
+/* Also make sure the toggle itself stays on top */
+.menu-toggle { z-index: 1003; }
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+/* Tablet breakpoint for iPad Air and similar devices */
+@media screen and (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-container {
+    padding: 0.75rem 4%;
+  }
+
+  .logo-text {
+    font-size: 1.6rem;
+  }
+
+  /* Slide-out mobile menu (tablet) */
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    max-width: 420px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    padding: 4.5rem 1.25rem 2rem;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.08);
+    overflow-y: auto;
+  }
+
+  .navbar-menu.active {
+    right: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-link {
+    color: #333;
+    padding: 0.9rem 0;
+    display: block;
+    font-size: 0.98rem;
+  }
+
+  .nav-link::after {
+    background: #667eea;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #667eea;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+
+  /* Show auth buttons in tablet slide-out menu */
+  .navbar-menu.active .auth-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  .navbar-menu.active .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .user-dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    margin-top: 0.5rem;
+    background: #f8f9fa;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 350px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    padding: 5rem 1.5rem 2rem;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+
+  .navbar-menu.active {
+    right: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-link {
+    color: #333;
+    padding: 1rem 0;
+    display: block;
+    font-size: 1.1rem;
+  }
+
+  .nav-link::after {
+    background: #667eea;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #667eea;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+
+  /* Show auth buttons in mobile menu */
+  .navbar-menu.active .auth-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .navbar-menu.active .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-menu.active .btn-outline {
+    background: transparent;
+    color: #667eea;
+    border-color: #667eea;
+  }
+
+  .navbar-menu.active .btn-outline:hover {
+    background: #667eea;
+    color: white;
+  }
+
+  .navbar-menu.active .btn-primary {
+    background: #667eea;
+    border-color: #667eea;
+    color: white;
+  }
+
+  .navbar-menu.active .btn-primary:hover {
+    background: #5a67d8;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .user-dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    margin-top: 0.5rem;
+    background: #f8f9fa;
+  }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .navbar-container {
+    padding: 1rem 4%;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Animation for dropdown */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar styling for mobile menu */
+.navbar-menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+.navbar-menu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.navbar-menu::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.navbar-menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
