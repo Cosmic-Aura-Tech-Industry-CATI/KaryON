@@ -529,7 +529,7 @@ const Signup = () => {
                     <div className="form-group">
                       <label htmlFor="hourlyRate">
                         <span className="label-icon">💰</span>
-                        Hourly Rate ($) <span className="required">*</span>
+                        Hourly Rate (₹) <span className="required">*</span>
                       </label>
                       <input
                         type="number"

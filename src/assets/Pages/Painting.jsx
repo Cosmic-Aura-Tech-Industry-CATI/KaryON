@@ -95,7 +95,7 @@ const Painting = () => {
       icon: "🏠", 
       title: "Interior Painting", 
       description: "Professional interior painting for walls, ceilings, and trim",
-      price: "From $299/room",
+      price: "From ₹299/room",
       features: ["Premium paints", "Clean finish", "Color consultation"],
       color: "#667eea"
     },
@@ -103,7 +103,7 @@ const Painting = () => {
       icon: "🌳", 
       title: "Exterior Painting", 
       description: "Weather-resistant exterior painting for lasting protection",
-      price: "From $999",
+      price: "From ₹999",
       features: ["Weather proof", "5-year warranty", "Pressure wash"],
       color: "#fc7f03"
     },
@@ -111,7 +111,7 @@ const Painting = () => {
       icon: "🎨", 
       title: "Cabinet Painting", 
       description: "Transform your cabinets with professional painting",
-      price: "From $399",
+      price: "From ₹399",
       features: ["Smooth finish", "Durable coating", "Hardware included"],
       color: "#502222"
     },
@@ -119,7 +119,7 @@ const Painting = () => {
       icon: "🖌️", 
       title: "Wallpaper Removal", 
       description: "Expert wallpaper removal and wall preparation",
-      price: "From $199",
+      price: "From ₹199",
       features: ["Steam removal", "Wall repair", "Smooth finish"],
       color: "#667eea"
     },
@@ -127,7 +127,7 @@ const Painting = () => {
       icon: "✨", 
       title: "Texture Painting", 
       description: "Decorative texture finishes for unique walls",
-      price: "From $349",
+      price: "From ₹349",
       features: ["Multiple textures", "Design patterns", "Custom effects"],
       color: "#fc7f03"
     },
@@ -143,7 +143,7 @@ const Painting = () => {
       icon: "🪑", 
       title: "Furniture Painting", 
       description: "Give old furniture new life with professional painting",
-      price: "From $149",
+      price: "From ₹149",
       features: ["Chalk paint", "Antique finish", "Sealing"],
       color: "#667eea"
     },
@@ -151,7 +151,7 @@ const Painting = () => {
       icon: "🎭", 
       title: "Faux Finishes", 
       description: "Artistic faux finishing for accent walls",
-      price: "From $449",
+      price: "From ₹449",
       features: ["Marble effect", "Wood grain", "Metallic"],
       color: "#fc7f03"
     }

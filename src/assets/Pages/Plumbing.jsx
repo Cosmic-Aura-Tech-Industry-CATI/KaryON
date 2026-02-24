@@ -92,7 +92,7 @@ const Plumber = () => {
       icon: "🚰", 
       title: "Leak Repairs", 
       description: "Expert leak detection and repair for pipes, faucets, and toilets",
-      price: "From $89",
+      price: "From ₹89",
       features: ["Same-day service", "30-day guarantee", "Licensed plumbers"],
       color: "#667eea"
     },
@@ -100,7 +100,7 @@ const Plumber = () => {
       icon: "🚽", 
       title: "Toilet Installation", 
       description: "Professional installation and repair for all toilet types",
-      price: "From $149",
+      price: "From ₹149",
       features: ["All brands", "Water-efficient", "1-year warranty"],
       color: "#fc7f03"
     },
@@ -108,7 +108,7 @@ const Plumber = () => {
       icon: "🚿", 
       title: "Shower & Bath", 
       description: "Complete bathroom plumbing installation and repair",
-      price: "From $199",
+      price: "From ₹199",
       features: ["Fixture install", "Pressure test", "Leak proof"],
       color: "#502222"
     },
@@ -116,7 +116,7 @@ const Plumber = () => {
       icon: "💧", 
       title: "Drain Cleaning", 
       description: "Professional drain clearing and sewer line services",
-      price: "From $119",
+      price: "From ₹119",
       features: ["Hydro-jetting", "Camera inspect", "Root removal"],
       color: "#667eea"
     },
@@ -124,7 +124,7 @@ const Plumber = () => {
       icon: "🔥", 
       title: "Water Heaters", 
       description: "Installation and repair of all water heater types",
-      price: "From $299",
+      price: "From ₹299",
       features: ["Tank & tankless", "Energy star", "Emergency"],
       color: "#fc7f03"
     },
@@ -132,7 +132,7 @@ const Plumber = () => {
       icon: "🔧", 
       title: "Pipe Installation", 
       description: "New pipe installation and complete repiping services",
-      price: "From $249",
+      price: "From ₹249",
       features: ["Copper & PEX", "Code compliant", "Permits"],
       color: "#502222"
     },
@@ -140,7 +140,7 @@ const Plumber = () => {
       icon: "💦", 
       title: "Sump Pumps", 
       description: "Sump pump installation, repair, and maintenance",
-      price: "From $179",
+      price: "From ₹179",
       features: ["Battery backup", "Flood prevent", "Annual check"],
       color: "#667eea"
     },

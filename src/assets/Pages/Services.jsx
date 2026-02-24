@@ -23,52 +23,52 @@ const Services = () => {
   // Services Data
   const servicesData = [
     // Plumbing Services
-    { id: 1, category: 'plumbing', name: 'Pipe Repair & Replacement', icon: '🔧', price: '$89 - $299', rating: 4.8, reviews: 234, description: 'Fix leaking pipes, replace old pipes with modern solutions', popular: true, color: '#667eea' },
-    { id: 2, category: 'plumbing', name: 'Drain Cleaning', icon: '🚿', price: '$79 - $199', rating: 4.7, reviews: 189, description: 'Unclog drains, remove blockages, prevent future clogs', popular: false, color: '#667eea' },
-    { id: 3, category: 'plumbing', name: 'Water Heater Installation', icon: '🔥', price: '$299 - $899', rating: 4.9, reviews: 156, description: 'Install new water heaters, repair existing ones', popular: true, color: '#667eea' },
-    { id: 4, category: 'plumbing', name: 'Faucet Installation', icon: '🚰', price: '$59 - $149', rating: 4.6, reviews: 98, description: 'Install new faucets, repair dripping faucets', popular: false, color: '#667eea' },
+    { id: 1, category: 'plumbing', name: 'Pipe Repair & Replacement', icon: '🔧', price: '₹89 - ₹299', rating: 4.8, reviews: 234, description: 'Fix leaking pipes, replace old pipes with modern solutions', popular: true, color: '#667eea' },
+    { id: 2, category: 'plumbing', name: 'Drain Cleaning', icon: '🚿', price: '₹79 - ₹199', rating: 4.7, reviews: 189, description: 'Unclog drains, remove blockages, prevent future clogs', popular: false, color: '#667eea' },
+    { id: 3, category: 'plumbing', name: 'Water Heater Installation', icon: '🔥', price: '₹299 - ₹899', rating: 4.9, reviews: 156, description: 'Install new water heaters, repair existing ones', popular: true, color: '#667eea' },
+    { id: 4, category: 'plumbing', name: 'Faucet Installation', icon: '🚰', price: '₹59 - ₹149', rating: 4.6, reviews: 98, description: 'Install new faucets, repair dripping faucets', popular: false, color: '#667eea' },
     
     // Electrical Services
-    { id: 5, category: 'electrical', name: 'Wiring & Rewiring', icon: '⚡', price: '$149 - $599', rating: 4.9, reviews: 312, description: 'Complete house wiring, rewiring old homes', popular: true, color: '#fc7f03' },
-    { id: 6, category: 'electrical', name: 'Lighting Installation', icon: '💡', price: '$69 - $249', rating: 4.8, reviews: 278, description: 'Install chandeliers, LED lights, outdoor lighting', popular: false, color: '#fc7f03' },
-    { id: 7, category: 'electrical', name: 'Circuit Breaker Repair', icon: '🔌', price: '$99 - $349', rating: 4.7, reviews: 145, description: 'Fix tripping breakers, upgrade electrical panels', popular: true, color: '#fc7f03' },
-    { id: 8, category: 'electrical', name: 'Ceiling Fan Installation', icon: '🌀', price: '$79 - $199', rating: 4.8, reviews: 167, description: 'Install ceiling fans, repair fan motors', popular: false, color: '#fc7f03' },
+    { id: 5, category: 'electrical', name: 'Wiring & Rewiring', icon: '⚡', price: '₹149 - ₹599', rating: 4.9, reviews: 312, description: 'Complete house wiring, rewiring old homes', popular: true, color: '#fc7f03' },
+    { id: 6, category: 'electrical', name: 'Lighting Installation', icon: '💡', price: '₹69 - ₹249', rating: 4.8, reviews: 278, description: 'Install chandeliers, LED lights, outdoor lighting', popular: false, color: '#fc7f03' },
+    { id: 7, category: 'electrical', name: 'Circuit Breaker Repair', icon: '🔌', price: '₹99 - ₹349', rating: 4.7, reviews: 145, description: 'Fix tripping breakers, upgrade electrical panels', popular: true, color: '#fc7f03' },
+    { id: 8, category: 'electrical', name: 'Ceiling Fan Installation', icon: '🌀', price: '₹79 - ₹199', rating: 4.8, reviews: 167, description: 'Install ceiling fans, repair fan motors', popular: false, color: '#fc7f03' },
     
     // Carpentry Services
-    { id: 9, category: 'carpentry', name: 'Custom Furniture', icon: '🪑', price: '$199 - $999', rating: 4.9, reviews: 89, description: 'Build custom tables, chairs, cabinets', popular: true, color: '#502222' },
-    { id: 10, category: 'carpentry', name: 'Door Repair & Installation', icon: '🚪', price: '$89 - $399', rating: 4.7, reviews: 134, description: 'Fix door frames, install new doors', popular: false, color: '#502222' },
-    { id: 11, category: 'carpentry', name: 'Cabinet Making', icon: '🗄️', price: '$299 - $899', rating: 4.8, reviews: 78, description: 'Custom kitchen cabinets, storage solutions', popular: true, color: '#502222' },
-    { id: 12, category: 'carpentry', name: 'Deck Building', icon: '🪵', price: '$499 - $1999', rating: 4.9, reviews: 56, description: 'Build wooden decks, patios, pergolas', popular: false, color: '#502222' },
+    { id: 9, category: 'carpentry', name: 'Custom Furniture', icon: '🪑', price: '₹199 - ₹999', rating: 4.9, reviews: 89, description: 'Build custom tables, chairs, cabinets', popular: true, color: '#502222' },
+    { id: 10, category: 'carpentry', name: 'Door Repair & Installation', icon: '🚪', price: '₹89 - ₹399', rating: 4.7, reviews: 134, description: 'Fix door frames, install new doors', popular: false, color: '#502222' },
+    { id: 11, category: 'carpentry', name: 'Cabinet Making', icon: '🗄️', price: '₹299 - ₹899', rating: 4.8, reviews: 78, description: 'Custom kitchen cabinets, storage solutions', popular: true, color: '#502222' },
+    { id: 12, category: 'carpentry', name: 'Deck Building', icon: '🪵', price: '₹499 - ₹1999', rating: 4.9, reviews: 56, description: 'Build wooden decks, patios, pergolas', popular: false, color: '#502222' },
     
     // Cleaning Services
-    { id: 13, category: 'cleaning', name: 'Deep Cleaning', icon: '🧹', price: '$149 - $499', rating: 4.8, reviews: 445, description: 'Complete home deep cleaning service', popular: true, color: '#667eea' },
-    { id: 14, category: 'cleaning', name: 'Carpet Cleaning', icon: '🧼', price: '$79 - $299', rating: 4.7, reviews: 289, description: 'Steam cleaning, stain removal', popular: false, color: '#667eea' },
-    { id: 15, category: 'cleaning', name: 'Window Cleaning', icon: '🪟', price: '$59 - $199', rating: 4.6, reviews: 178, description: 'Interior and exterior window cleaning', popular: false, color: '#667eea' },
-    { id: 16, category: 'cleaning', name: 'Move-in/Move-out', icon: '📦', price: '$199 - $599', rating: 4.9, reviews: 234, description: 'Complete cleaning for moving', popular: true, color: '#667eea' },
+    { id: 13, category: 'cleaning', name: 'Deep Cleaning', icon: '🧹', price: '₹149 - ₹499', rating: 4.8, reviews: 445, description: 'Complete home deep cleaning service', popular: true, color: '#667eea' },
+    { id: 14, category: 'cleaning', name: 'Carpet Cleaning', icon: '🧼', price: '₹79 - ₹299', rating: 4.7, reviews: 289, description: 'Steam cleaning, stain removal', popular: false, color: '#667eea' },
+    { id: 15, category: 'cleaning', name: 'Window Cleaning', icon: '🪟', price: '₹59 - ₹199', rating: 4.6, reviews: 178, description: 'Interior and exterior window cleaning', popular: false, color: '#667eea' },
+    { id: 16, category: 'cleaning', name: 'Move-in/Move-out', icon: '📦', price: '₹199 - ₹599', rating: 4.9, reviews: 234, description: 'Complete cleaning for moving', popular: true, color: '#667eea' },
     
     // Painting Services
-    { id: 17, category: 'painting', name: 'Interior Painting', icon: '🎨', price: '$299 - $999', rating: 4.8, reviews: 367, description: 'Professional interior wall painting', popular: true, color: '#fc7f03' },
-    { id: 18, category: 'painting', name: 'Exterior Painting', icon: '🏠', price: '$599 - $1999', rating: 4.7, reviews: 156, description: 'House exterior painting services', popular: false, color: '#fc7f03' },
-    { id: 19, category: 'painting', name: 'Cabinet Painting', icon: '🗄️', price: '$199 - $599', rating: 4.6, reviews: 98, description: 'Kitchen cabinet refinishing', popular: false, color: '#fc7f03' },
-    { id: 20, category: 'painting', name: 'Wallpaper Installation', icon: '📜', price: '$149 - $499', rating: 4.5, reviews: 67, description: 'Professional wallpaper hanging', popular: false, color: '#fc7f03' },
+    { id: 17, category: 'painting', name: 'Interior Painting', icon: '🎨', price: '₹299 - ₹999', rating: 4.8, reviews: 367, description: 'Professional interior wall painting', popular: true, color: '#fc7f03' },
+    { id: 18, category: 'painting', name: 'Exterior Painting', icon: '🏠', price: '₹599 - ₹1999', rating: 4.7, reviews: 156, description: 'House exterior painting services', popular: false, color: '#fc7f03' },
+    { id: 19, category: 'painting', name: 'Cabinet Painting', icon: '🗄️', price: '₹199 - ₹599', rating: 4.6, reviews: 98, description: 'Kitchen cabinet refinishing', popular: false, color: '#fc7f03' },
+    { id: 20, category: 'painting', name: 'Wallpaper Installation', icon: '📜', price: '₹149 - ₹499', rating: 4.5, reviews: 67, description: 'Professional wallpaper hanging', popular: false, color: '#fc7f03' },
     
     // HVAC Services
-    { id: 21, category: 'hvac', name: 'AC Installation', icon: '❄️', price: '$499 - $1499', rating: 4.9, reviews: 189, description: 'Install new air conditioning units', popular: true, color: '#502222' },
-    { id: 22, category: 'hvac', name: 'AC Repair', icon: '🔧', price: '$99 - $399', rating: 4.8, reviews: 278, description: 'Fix AC problems, recharge refrigerant', popular: true, color: '#502222' },
-    { id: 23, category: 'hvac', name: 'Heater Installation', icon: '🔥', price: '$399 - $1299', rating: 4.7, reviews: 145, description: 'Install new heating systems', popular: false, color: '#502222' },
-    { id: 24, category: 'hvac', name: 'Duct Cleaning', icon: '🌀', price: '$199 - $599', rating: 4.6, reviews: 123, description: 'Clean air ducts, improve air quality', popular: false, color: '#502222' },
+    { id: 21, category: 'hvac', name: 'AC Installation', icon: '❄️', price: '₹499 - ₹1499', rating: 4.9, reviews: 189, description: 'Install new air conditioning units', popular: true, color: '#502222' },
+    { id: 22, category: 'hvac', name: 'AC Repair', icon: '🔧', price: '₹99 - ₹399', rating: 4.8, reviews: 278, description: 'Fix AC problems, recharge refrigerant', popular: true, color: '#502222' },
+    { id: 23, category: 'hvac', name: 'Heater Installation', icon: '🔥', price: '₹399 - ₹1299', rating: 4.7, reviews: 145, description: 'Install new heating systems', popular: false, color: '#502222' },
+    { id: 24, category: 'hvac', name: 'Duct Cleaning', icon: '🌀', price: '₹199 - ₹599', rating: 4.6, reviews: 123, description: 'Clean air ducts, improve air quality', popular: false, color: '#502222' },
     
     // Moving Services
-    { id: 25, category: 'moving', name: 'Local Moving', icon: '📦', price: '$299 - $899', rating: 4.8, reviews: 234, description: 'Move within the same city', popular: true, color: '#667eea' },
-    { id: 26, category: 'moving', name: 'Long Distance Moving', icon: '🚚', price: '$999 - $2999', rating: 4.7, reviews: 89, description: 'Move to different cities', popular: false, color: '#667eea' },
-    { id: 27, category: 'moving', name: 'Packing Services', icon: '📦', price: '$149 - $599', rating: 4.6, reviews: 145, description: 'Professional packing and unpacking', popular: false, color: '#667eea' },
-    { id: 28, category: 'moving', name: 'Storage Services', icon: '🏢', price: '$89 - $299/mo', rating: 4.5, reviews: 67, description: 'Secure storage solutions', popular: false, color: '#667eea' },
+    { id: 25, category: 'moving', name: 'Local Moving', icon: '📦', price: '₹299 - ₹899', rating: 4.8, reviews: 234, description: 'Move within the same city', popular: true, color: '#667eea' },
+    { id: 26, category: 'moving', name: 'Long Distance Moving', icon: '🚚', price: '₹999 - ₹2999', rating: 4.7, reviews: 89, description: 'Move to different cities', popular: false, color: '#667eea' },
+    { id: 27, category: 'moving', name: 'Packing Services', icon: '📦', price: '₹149 - ₹599', rating: 4.6, reviews: 145, description: 'Professional packing and unpacking', popular: false, color: '#667eea' },
+    { id: 28, category: 'moving', name: 'Storage Services', icon: '🏢', price: '₹89 - ₹299/mo', rating: 4.5, reviews: 67, description: 'Secure storage solutions', popular: false, color: '#667eea' },
     
     // Gardening Services
-    { id: 29, category: 'gardening', name: 'Lawn Mowing', icon: '🌿', price: '$49 - $149', rating: 4.7, reviews: 345, description: 'Professional lawn maintenance', popular: true, color: '#fc7f03' },
-    { id: 30, category: 'gardening', name: 'Landscaping', icon: '🌳', price: '$299 - $999', rating: 4.8, reviews: 167, description: 'Complete garden design and setup', popular: true, color: '#fc7f03' },
-    { id: 31, category: 'gardening', name: 'Tree Trimming', icon: '🌲', price: '$99 - $399', rating: 4.6, reviews: 98, description: 'Tree pruning and removal', popular: false, color: '#fc7f03' },
-    { id: 32, category: 'gardening', name: 'Garden Cleanup', icon: '🍂', price: '$79 - $249', rating: 4.5, reviews: 123, description: 'Seasonal garden cleanup', popular: false, color: '#fc7f03' }
+    { id: 29, category: 'gardening', name: 'Lawn Mowing', icon: '🌿', price: '₹49 - ₹149', rating: 4.7, reviews: 345, description: 'Professional lawn maintenance', popular: true, color: '#fc7f03' },
+    { id: 30, category: 'gardening', name: 'Landscaping', icon: '🌳', price: '₹299 - ₹999', rating: 4.8, reviews: 167, description: 'Complete garden design and setup', popular: true, color: '#fc7f03' },
+    { id: 31, category: 'gardening', name: 'Tree Trimming', icon: '🌲', price: '₹99 - ₹399', rating: 4.6, reviews: 98, description: 'Tree pruning and removal', popular: false, color: '#fc7f03' },
+    { id: 32, category: 'gardening', name: 'Garden Cleanup', icon: '🍂', price: '₹79 - ₹249', rating: 4.5, reviews: 123, description: 'Seasonal garden cleanup', popular: false, color: '#fc7f03' }
   ];
 
   // Filter services based on category and search
