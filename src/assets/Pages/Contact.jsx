@@ -137,8 +137,8 @@ const Contact = () => {
                 <div className="info-icon-glow"></div>
               </div>
               <h3 className="info-card-title">Call Us</h3>
-              <p className="info-card-detail">+1 (234) 567-890</p>
-              <p className="info-card-detail">+1 (234) 567-891</p>
+              <p className="info-card-detail">+91 93057 24440</p>
+              <p className="info-card-detail">+91 93057 24440</p>
               <p className="info-card-note">24/7 Emergency Support</p>
               <button className="info-card-btn">Call Now</button>
             </div>
@@ -161,23 +161,13 @@ const Contact = () => {
                 <div className="info-icon-glow"></div>
               </div>
               <h3 className="info-card-title">Visit Us</h3>
-              <p className="info-card-detail">123 Service Street</p>
-              <p className="info-card-detail">Cityville, ST 12345</p>
+              <p className="info-card-detail">Rooma, Hathipur</p>
+              <p className="info-card-detail">Kanpur Nagar, Uttar Pradesh</p>
               <p className="info-card-note">Mon-Sun: 24/7</p>
               <button className="info-card-btn">Get Directions</button>
             </div>
 
-            <div className="info-card">
-              <div className="info-card-icon-wrapper">
-                <span className="info-card-icon">💬</span>
-                <div className="info-icon-glow"></div>
-              </div>
-              <h3 className="info-card-title">Live Chat</h3>
-              <p className="info-card-detail">Chat with our team</p>
-              <p className="info-card-detail">Instant responses</p>
-              <p className="info-card-note">Online 24/7</p>
-              <button className="info-card-btn">Start Chat</button>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -441,12 +431,12 @@ const Contact = () => {
                 </div>
                 <div className="map-info">
                   <h3>Main Office</h3>
-                  <p>123 Service Street, Cityville, ST 12345</p>
+                  <p>Rooma Hathipur, Kanpur Nagar, Uttar Pradesh</p>
                   <p>Open 24/7 - Always here to help</p>
                 </div>
               </div>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-73.9851076845843!3d40.75889697932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps?q=Rooma%20Hathipur,%20Kanpur%20Nagar,%20Uttar%20Pradesh&z=14&output=embed"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}

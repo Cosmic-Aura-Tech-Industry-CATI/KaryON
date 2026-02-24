@@ -19,6 +19,7 @@ const Blog = lazy(() => import("./assets/Pages/Blog"));
 const Mybooking = lazy(() => import("./assets/Pages/Mybooking"));
 const HomeCleaning = lazy(() => import("./assets/Pages/HomeCleaning"));
 const Plumbing = lazy(() => import("./assets/Pages/Plumbing"));
+const Painting = lazy(() => import("./assets/Pages/Painting"));
 
 const SITE_NAME = "KaryON";
 const SITE_URL = import.meta.env.VITE_SITE_URL || "https://karyon.app";
@@ -146,6 +147,7 @@ function App() {
             <Route path="/bookings" element={<Mybooking />} />
             <Route path="/cleaning" element={<HomeCleaning />} />
             <Route path="/plumbing" element={<Plumbing />} />
+            <Route path="/painting" element={<Painting />} />
           </Routes>
         </Suspense>
       </main>
