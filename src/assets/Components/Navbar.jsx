@@ -19,7 +19,7 @@ const Navbar = () => {
         {/* Logo and Brand */}
         <div className="navbar-logo">
           <a href="/">
-            <img src="logoKaryONfull.png" alt="KaryON Logo" width="150px" height="55px"></img>
+            <img src="main-logo.png" alt="KaryON Logo" width="170px" height="55px"></img>
           </a>
         </div>
 

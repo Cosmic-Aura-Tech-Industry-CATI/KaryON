@@ -32,7 +32,7 @@ const Footer = () => {
             {/* Company Info Section */}
             <div className="footer-section company-info">
               <div className="footer-logo">
-                <img src="logoKaryONfull.png" alt="KaryON Logo" width="190px" height="65px"></img>
+                <img src="main-logo.png" alt="KaryON Logo" width="195px" height="65px"></img>
               </div>
               <p className="company-description">
                 KaryON makes home services simple, secure, and reliable. Connect with verified professionals for all your home service needs.
